@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'designergPDMZy.ui'
+## Form generated from reading UI file 'dialogMUsWJP.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.2
+## Created by: Qt User Interface Compiler version 6.8.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -16,14 +16,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractButton, QApplication, QComboBox, QDialog,
-    QDialogButtonBox, QFormLayout, QLabel, QLineEdit,
-    QSizePolicy, QTextEdit, QVBoxLayout, QWidget)
+    QDialogButtonBox, QDoubleSpinBox, QFormLayout, QLabel,
+    QLineEdit, QSizePolicy, QSpinBox, QTextEdit,
+    QVBoxLayout, QWidget)
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         if not Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
-        Dialog.resize(549, 514)
+        Dialog.resize(549, 513)
         self.verticalLayout = QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.label_12 = QLabel(Dialog)
@@ -103,11 +104,6 @@ class Ui_Dialog(object):
 
         self.formLayout.setWidget(2, QFormLayout.FieldRole, self.lineEdit_3)
 
-        self.lineEdit_4 = QLineEdit(Dialog)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
-
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.lineEdit_4)
-
         self.comboBox = QComboBox(Dialog)
         self.comboBox.setObjectName(u"comboBox")
 
@@ -123,16 +119,6 @@ class Ui_Dialog(object):
 
         self.formLayout.setWidget(6, QFormLayout.FieldRole, self.comboBox_3)
 
-        self.lineEdit_5 = QLineEdit(Dialog)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
-
-        self.formLayout.setWidget(7, QFormLayout.FieldRole, self.lineEdit_5)
-
-        self.lineEdit_6 = QLineEdit(Dialog)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
-
-        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.lineEdit_6)
-
         self.textEdit = QTextEdit(Dialog)
         self.textEdit.setObjectName(u"textEdit")
 
@@ -142,6 +128,22 @@ class Ui_Dialog(object):
         self.lineEdit_7.setObjectName(u"lineEdit_7")
 
         self.formLayout.setWidget(10, QFormLayout.FieldRole, self.lineEdit_7)
+
+        self.spinBox = QSpinBox(Dialog)
+        self.spinBox.setObjectName(u"spinBox")
+
+        self.formLayout.setWidget(7, QFormLayout.FieldRole, self.spinBox)
+
+        self.spinBox_2 = QSpinBox(Dialog)
+        self.spinBox_2.setObjectName(u"spinBox_2")
+
+        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.spinBox_2)
+
+        self.doubleSpinBox = QDoubleSpinBox(Dialog)
+        self.doubleSpinBox.setObjectName(u"doubleSpinBox")
+        self.doubleSpinBox.setMaximum(999999.989999999990687)
+
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.doubleSpinBox)
 
 
         self.verticalLayout.addLayout(self.formLayout)
@@ -163,7 +165,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
-        self.label_12.setText(QCoreApplication.translate("Dialog", u".!.", None))
+        self.label_12.setText("")
         self.label.setText(QCoreApplication.translate("Dialog", u"ID", None))
         self.label_2.setText(QCoreApplication.translate("Dialog", u"Name", None))
         self.label_3.setText(QCoreApplication.translate("Dialog", u"unit", None))
